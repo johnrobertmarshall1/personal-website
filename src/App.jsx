@@ -11,7 +11,10 @@ const CONTACT = {
 
 function App() {
   const handleDownloadVCard = () => {
-    generateVCard(CONTACT)
+    generateVCard({
+      ...CONTACT,
+      photoUrl: import.meta.env.BASE_URL + 'headshot.jpg',
+    })
   }
 
   return (
