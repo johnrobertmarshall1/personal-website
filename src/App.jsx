@@ -7,7 +7,7 @@ const CONTACT = {
   phone: '1-(609)-454-1185',
   linkedin: 'https://www.linkedin.com/in/john-marshall-277104124/',
   instagram: 'https://www.instagram.com/johnnymarshh/',
-  websiteUrl: 'https://johnrobertmarshall1.github.io/personal-website/',
+  websiteUrl: 'https://johnmarshall.thedev.me/',
 }
 
 function App() {
@@ -84,7 +84,7 @@ function App() {
                 href={import.meta.env.BASE_URL + 'resume.pdf'}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-lg bg-emerald-600 px-5 py-2.5 text-sm font-medium text-white shadow-sm transition hover:bg-emerald-700"
+                className="inline-flex items-center gap-2 rounded-lg bg-gray-800 px-5 py-2.5 text-sm font-medium text-white shadow-sm transition hover:bg-gray-900"
               >
                 <svg
                   className="h-4 w-4"
@@ -105,7 +105,7 @@ function App() {
 
               <button
                 onClick={handleDownloadVCard}
-                className="inline-flex items-center gap-2 rounded-lg bg-indigo-600 px-5 py-2.5 text-sm font-medium text-white shadow-sm transition hover:bg-indigo-700"
+                className="inline-flex items-center gap-2 rounded-lg bg-gray-800 px-5 py-2.5 text-sm font-medium text-white shadow-sm transition hover:bg-gray-900"
               >
                 <svg
                   className="h-4 w-4"
