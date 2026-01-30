@@ -1,3 +1,15 @@
+function foldLine(line) {
+  const maxLen = 75
+  if (line.length <= maxLen) return line
+  let result = line.slice(0, maxLen)
+  let i = maxLen
+  while (i < line.length) {
+    result += '\r\n ' + line.slice(i, i + maxLen - 1)
+    i += maxLen - 1
+  }
+  return result
+}
+
 export async function generateVCard({ name, email, phone, linkedin, websiteUrl, photoUrl }) {
   const [firstName, ...rest] = name.split(' ')
   const lastName = rest.join(' ')
@@ -11,7 +23,7 @@ export async function generateVCard({ name, email, phone, linkedin, websiteUrl, 
       reader.onloadend = () => resolve(reader.result.split(',')[1])
       reader.readAsDataURL(blob)
     })
-    photoLine = `PHOTO;ENCODING=b;TYPE=JPEG:${base64}`
+    photoLine = foldLine(`PHOTO;ENCODING=b;TYPE=JPEG:${base64}`)
   }
 
   const vcard = [
