@@ -7,7 +7,7 @@ const CONTACT = {
   phone: '1-(609)-454-1185',
   linkedin: 'https://www.linkedin.com/in/john-marshall-277104124/',
   instagram: 'https://www.instagram.com/johnnymarshh/',
-  websiteUrl: 'https://johnmarshall.thedev.me/',
+  websiteUrl: 'https://johnrobertmarshall1.github.io/personal-website/',
 }
 
 function App() {
